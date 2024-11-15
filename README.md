@@ -1,1 +1,34 @@
-# metacrafters_ethavax
+# Valorant Points Manager (VPM)
+The **Valorant Points Manager** is a Solidity-based smart contract that manages a player’s point system for a reward-based application. This contract allows users to earn points, redeem rewards, and ensures administrative controls for managing point-related configurations.
+
+---
+
+## Requirements
+This project meets the following requirements:
+1. Players can **earn points** through the `earnPoints` function.
+2. Players can **redeem rewards** by spending points using the `redeemReward` function.
+3. The contract owner has the ability to:
+   - Set the cost of redeeming rewards.
+   - Define the maximum allowable points.
+   - Update system configurations like reward cost.
+
+All requirements have been implemented and tested in the contract.
+
+---
+
+## Smart Contract Overview
+This contract is written in Solidity 0.8.0. Key functionalities include:
+- **Earn Points (`earnPoints`)**: Allows players to add points to their accounts.
+- **Redeem Reward (`redeemReward`)**: Deducts points from a player's account to claim rewards.
+- **Owner Controls**: The owner can adjust reward costs, maximum points, and other settings.
+
+### Contract Functions and How to Use Them
+
+#### Earn Points (`earnPoints`)
+- **Description**: Adds a specified number of points to the caller's account.
+- **Requirements**:
+  - Points must be greater than zero.
+  - The total points must not exceed the maximum allowed points.
+- **Example Usage**:
+  ```solidity
+  earnPoints(200); // Adds 200 points to the player's account
