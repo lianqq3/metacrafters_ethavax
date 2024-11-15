@@ -141,3 +141,6 @@ After the contract is deployed, you will see a list of available functions in th
 
 ---
 
+## Authors
+
+Eymard Julian S. Jimeno | 202110545@fit.edu.ph
