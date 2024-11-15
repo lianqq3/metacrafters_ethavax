@@ -31,6 +31,13 @@ This contract is written in Solidity 0.8.0. Key functionalities include:
 - **Requirements**:
   - Points must be greater than zero.
   - The total points must not exceed the maximum allowed points.
-- **Example Usage**:
-  ```solidity
-  earnPoints(200); // Adds 200 points to the player's account
+
+#### Redeem Rewards (`earnPoints`)
+- **Description**: Deducts points from the caller's account to claim a reward.
+- **Requirements**:
+  - The caller must have enough points to cover the reward cost.
+
+## Purchase Skin (`purchaseSkin`)
+- **Description**: Deducts points from the caller's account to purchase a skin.
+- **Requirements**:
+  - The caller must have enough points to cover the reward cost.
