@@ -78,8 +78,6 @@ contract ValorantPointsManager {
 ## Compilation
 To compile the code, head to the Solidity Compiler after that go to the Deploy and run transactions wherein you can deploy.
 
-After the contract is deployed, you will see a list of available functions in the "Deployed Contracts" section. Here's how to interact with each function:
-
 **Interacting with the Functions**
 
    After the contract is deployed, you will see a list of available functions in the "Deployed Contracts" section. Here's how to interact with each function:
