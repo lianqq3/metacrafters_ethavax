@@ -7,7 +7,8 @@ The **Valorant Points Manager** is a Solidity-based smart contract that manages 
 This project meets the following requirements:
 1. Players can **earn points** through the `earnPoints` function.
 2. Players can **redeem rewards** by spending points using the `redeemReward` function.
-3. The contract owner has the ability to:
+3. Players can **purchase skins** by spending points using the `purchaseSkin` function
+4. The contract owner has the ability to:
    - Set the cost of redeeming rewards.
    - Define the maximum allowable points.
    - Update system configurations like reward cost.
@@ -20,6 +21,7 @@ All requirements have been implemented and tested in the contract.
 This contract is written in Solidity 0.8.0. Key functionalities include:
 - **Earn Points (`earnPoints`)**: Allows players to add points to their accounts.
 - **Redeem Reward (`redeemReward`)**: Deducts points from a player's account to claim rewards.
+- **Purchase Skin** (`purchaseSkin`)**: Allows players to purchase skins.
 - **Owner Controls**: The owner can adjust reward costs, maximum points, and other settings.
 
 ### Contract Functions and How to Use Them
